@@ -9,7 +9,7 @@ def solution(k, score):
     first = 0
     diff_list =[]
 
-    # 차이 넣어주기 
+    # diff  
     for i in range(len(score)):
         if i == 0:
             first = score[i]
@@ -21,7 +21,7 @@ def solution(k, score):
             if t not in diff_list:
                 diff_list.append(t)
 
-    # 사이즈
+    # size
     if (len(diff) % 2) == 0:
         size = len(diff) // 2
     elif (len(diff) % 2) == 1:
